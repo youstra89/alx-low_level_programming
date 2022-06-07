@@ -4,6 +4,8 @@
  * main - entry point
  *
  * Return : Always return 0
+ *
+ * @ch: the character to print on stdout
  */
 
 void _putchar(char ch);
