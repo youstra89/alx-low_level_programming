@@ -6,10 +6,10 @@
  * Return : Always display alphabet
  */
 
-void _putchar(char ch)
-{
+void _putchar(char ch);
+/*{
 	putchar(ch);
-}
+}*/
 
 
 void print_alphabet(void)
