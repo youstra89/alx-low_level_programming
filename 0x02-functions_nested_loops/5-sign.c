@@ -5,9 +5,9 @@
 /**
  * print_sign - print input number sign
  *
- * @n : number to check sign
+ * @n: number to check sign
  *
- * Return : 1 for positive number, 0 for 0 and -1 for negative number
+ * Return: 1 for positive number, 0 for 0 and -1 for negative number
  */
 
 int print_sign(int n)

@@ -7,7 +7,7 @@
  *
  * @c: char to verify
  *
- * Return : 1 if the c is lowercase. 0 otherwise
+ * Return: 1 if the c is lowercase. 0 otherwise
  */
 
 int _isalpha(int c)

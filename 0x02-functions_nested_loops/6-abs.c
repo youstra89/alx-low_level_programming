@@ -5,9 +5,9 @@
 /**
  * _abs - print input numberabsolute value
  *
- * @n : number to check sign
+ * @n: number to check sign
  *
- * Return : absolute value
+ * Return: absolute value
  */
 
 int _abs(int n)
