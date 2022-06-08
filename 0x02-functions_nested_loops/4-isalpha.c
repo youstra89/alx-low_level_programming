@@ -3,19 +3,19 @@
 #include "main.h"
 
 /**
- * _islower - my own islower function
+ * _isalpha - my own islower function
  *
  * @c: char to verify
  *
  * Return : 1 if the c is lowercase. 0 otherwise
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	int r;
 	int rt;
 
-	r = islower(c);
+	r = isalpha(c);
 	if (r == 0)
 	{
 		rt = 0;
