@@ -14,9 +14,9 @@ int main(void)
 	int year;
 	int error = 0;
 
-	mon = 4;
-	day = 31;
-	year = 1997;
+	mon = 2;
+	day = 29;
+	year = 2000;
 
 	if (mon < 1 || mon > 12)
 	{
@@ -30,7 +30,7 @@ int main(void)
 		printf("Invalid date");
 	}
 
-	if ((mon % 2 == 0 && day == 31 && mon != 8) || (year % 4 == 1 && month > 28))
+	if ((mon % 2 == 0 && day == 31 && mon != 8) || (year % 4 == 1 && mon > 28))
 	{
 		error = 1;
 		printf("Invalid date");
@@ -38,11 +38,11 @@ int main(void)
 
 	if (error == 0)
 	{
-		printf("Date: %02d/%02d/%04d\n", month, day, year);
+		printf("Date: %02d/%02d/%04d\n", mon, day, year);
 
-		day = convert_day(month, day);
+		day = convert_day(mon, day);
 
-		print_remaining_days(month, day, year);
+		print_remaining_days(mon, day, year);
 	}
 
 	return (0);
