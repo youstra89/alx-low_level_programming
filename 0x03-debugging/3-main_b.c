@@ -9,16 +9,16 @@
 
 int main(void)
 {
-	int month;
+	int mon;
 	int day;
 	int year;
 	int error = 0;
 
-	month = 4;
+	mon = 4;
 	day = 31;
 	year = 1997;
 
-	if (month < 1 || month > 12)
+	if (mon < 1 || mon > 12)
 	{
 		error = 1;
 		printf("Invalid date");
@@ -30,7 +30,7 @@ int main(void)
 		printf("Invalid date");
 	}
 
-	if ((month % 2 == 0 && day == 31 && month != 8) || (year % 4 == 1 && month > 28))
+	if ((mon % 2 == 0 && day == 31 && mon != 8) || (year % 4 == 1 && month > 28))
 	{
 		error = 1;
 		printf("Invalid date");
