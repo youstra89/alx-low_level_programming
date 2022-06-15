@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- *  print_last_digit - print input numberabsolute value
+ * print_last_digit - print input numberabsolute value
  *
  * @n: number to check sign
  *
