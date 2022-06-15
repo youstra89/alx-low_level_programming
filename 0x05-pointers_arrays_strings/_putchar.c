@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * _puts - check the code
+ * _putchar - check the code
  *
  * Return: Always 0.
  */
 
-void _puts(char *str)
+int _putchar(char c)
+
 {
-	puts(str);
+	return (write(1, &c, 1));
 }

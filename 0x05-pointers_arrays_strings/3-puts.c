@@ -1,21 +1,21 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
- * my_function - print a string
+ * _puts - print a string
  *
- * @: string to print
+ * @str: string to print
  * Return: void
  */
 
-void _puts(char *);
-
-int my_function(void)
+void _puts(char *str)
 {
-	char *str;
+	int i;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-
-	_puts(str);
-	return (0);
+	for (i = 0; str[i]; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
