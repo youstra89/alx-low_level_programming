@@ -2,9 +2,8 @@
 #include "main.h"
 
 /**
- * @brief 
  * _puts_recursion - function to print recursively a sentence
- * 
+ *
  * @s: a char to print
  * Return: void
  */
