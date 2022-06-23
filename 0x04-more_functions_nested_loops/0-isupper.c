@@ -10,18 +10,13 @@
 
 int _isupper(int c)
 {
-	int result;
-	int test;
-
-	test = isupper(c);
-	if (test == 0)
+	if (c >= 'A' && c <= 'Z')
 	{
-		result = 1;
+		return (1);
 	}
+
 	else
 	{
-		result = 0;
+		return (0);
 	}
-
-	return (result);
 }
