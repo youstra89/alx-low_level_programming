@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * whatsmyname - Pront program name
- * 
+ * main - Pront program name
+ * @argc: main program parameters number
+ * @argv: main program parameters array
  * Return: void
  */
 
