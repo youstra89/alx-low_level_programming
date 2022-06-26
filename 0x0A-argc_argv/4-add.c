@@ -3,29 +3,49 @@
 #include <ctype.h>
 
 /**
- * main - Program arguments number
- * @argc: main program parameters number
- * @argv: main program parameters array
- * Return: int
+ * main - adds two positive numbers
+ * @argc: number of arguments
+ * @argv: array of pointers*
+ *
+ * Return: 0
  */
 
-int main(int argc, char *argv[])
-{
-	int i = 1, sum = 0;
+int checker(char *c);
 
-	if (argc > 1)
-	{
-		for (; i < argc; i++)
+int main(int argc, char **argv)
+{
+		int j = 1, sum = 0;
+
+		if (argc > 1)
 		{
-			if (!(*argv[i] >= 65 && *argv[i] <= 90) && !(*argv[i] >= 97 && *argv[i] <= 122))
-				sum += atoi(argv[i]);
-			else
+			for (; j < argc; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (checker(argv[j]))
+					sum += atoi(argv[j]);
+				else
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 		}
+		printf("%d\n", sum);
+		return (0);
+}
+
+/**
+ * checker - check if its letter
+ * @c: checker character*
+ *
+ * Return: 0 if found in range 1 if not
+ */
+int checker(char *c)
+{
+	while (*c)
+	{
+		if ((*c >= 65 && *c <= 90) || (*c >= 97 && *c <= 122))
+			return (0);
+		c++;
 	}
-	printf("%d\n", sum);
-	return (0);
+	return (1);
 }
