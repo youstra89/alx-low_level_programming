@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+int checker(char *c);
+
 /**
  * main - adds two positive numbers
  * @argc: number of arguments
@@ -10,7 +12,6 @@
  * Return: 0
  */
 
-int checker(char *c);
 
 int main(int argc, char **argv)
 {
