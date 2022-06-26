@@ -25,12 +25,15 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if((*argv[i] >= 65 && *argv[i] <= 90) || (*argv[i] >= 97 && *argv[i] <= 122))
+			if ((*argv[i] >= 65 && *argv[i] <= 90) || (*argv[i] >= 97 && *argv[i] <= 122))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			res = res + atoi(argv[i]);
+			if (atoi(argv[i]) >= 0)
+			{
+				res = res + atoi(argv[i]);
+			}
 		}
 		printf("%d\n", res);
 		return (0);
