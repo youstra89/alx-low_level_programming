@@ -12,13 +12,33 @@
 char *create_array(unsigned int size, char c)
 {
 	char *str;
-	unsigned int i;
+	unsigned int i, j;
 
-	str = malloc(sizeof(c) * size);
-	for (i = 0; i < size; i++)
+	j = 0;
+	if (size == 0)
 	{
-		str[i] = c;
+		return (NULL);
 	}
+	else
+	{
+		while (j == 0)
+		{
+			str = malloc(sizeof(c) * size);
+			if (str == NULL)
+			{
+				printf("failed to allocate memory\n");
+				return (NULL);
+			}
+			else
+			{
+				j = 1;
+			}
+		}
 
+		for (i = 0; i < size; i++)
+		{
+			str[i] = c;
+		}
+	}
 	return (str);
 }
